@@ -11,33 +11,126 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <title>Elicit test app</title>
     </head>
-    <body>
-        <div data-role="page">  
-	        <div class="header" data-role="header">  
-	            <span class="open left"><a href="#panel-01"><</a></span>  
-	            <span class="title">Hello World</span>  
-	            <span class="open right"><a href="#panel-02">></a></span>  
-	        </div>  
-	        <div class="content" data-role="content">  
-	            <h3>This is the content</h3>  
-	            <p>Tuurlijk dit is ontzettend leuk dus</p>  
-	        </div>  
-	        <div class="panel left" data-role="panel" data-position="left" data-display="push" id="panel-01">  
-	            <ul>  
-	                <li class="newsfeed"><a href="#" title="Home">News Feed</a></li>  
-	                <li class="profile"><a href="#" title="Profile">Profile</a></li>  
-	                <li class="setting"><a href="#" title="Setting">Setting</a></li>  
-	                <li class="logout"><a href="#" title="Logout">Logout</a></li>  
-	                <li class="report"><a href="#" title="Report">Report Bug</a></li>  
-	            </ul>  
-	        </div>  
-	        <div class="panel right" data-role="panel" data-position="right" data-display="overlay" id="panel-02">  
-	                <ul>  
-	                    <li><a href="#" title="John Doe"><span class="avatar"><img src="img/mambows_120.jpg" width="30" height="30"></span>John Doe</a></li>  
-	                    <li><a href="#" title="Jessy Doe"><span class="avatar"><img src="img/mkalalang_120.jpg" width="30" height="30"></span>Jessy Doe</a></li>  
-	                </ul>  
-	        </div>  
-	    </div>  
+    <body>       
+	    
+	    <!-- Start of first page -->
+		<div data-role="page" id="star">
+		
+			<div data-role="header">
+				<h1>Star</h1>
+			</div><!-- /header -->
+		
+			<div role="main" class="ui-content">
+				<p>I'm first in the source order so I'm shown as the page.</p>
+				
+			</div><!-- /content -->
+		
+			<div data-role="footer" data-id="footera" data-position="fixed">
+		        <div data-role="navbar">
+		            <ul>
+		                <li>
+		                	<a href="#star" class="ui-btn-active" >
+			                	<img width="20px" height="20px" src="img/star.svg"><br/>
+			                	<span>Star</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#square">
+			                	<img width="20px" height="20px" src="img/square.svg"><br/>
+			                	<span>Square</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#circle">
+			                	<img width="20px" height="20px" src="img/circle.svg"><br/>
+			                	<span>Circle</span>
+			                </a>
+			            </li>
+		                
+		            </ul>
+		        </div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+		
+		<!-- Start of second page -->
+		<div data-role="page" id="square">
+		
+			<div data-role="header">
+				<h1>Square</h1>
+			</div><!-- /header -->
+		
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+				
+			</div><!-- /content -->
+		
+			<div data-role="footer" data-id="footera" data-position="fixed">
+		        <div data-role="navbar">
+		            <ul>
+		                <li>
+		                	<a href="#star"  >
+			                	<img width="20px" height="20px" src="img/star.svg"><br/>
+			                	<span>Star</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#square" class="ui-btn-active">
+			                	<img width="20px" height="20px" src="img/square.svg"><br/>
+			                	<span>Square</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#circle">
+			                	<img width="20px" height="20px" src="img/circle.svg"><br/>
+			                	<span>Circle</span>
+			                </a>
+			            </li>
+		                
+		            </ul>
+		        </div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+	    <!-- Start of second page -->
+		<div data-role="page" id="circle">
+		
+			<div data-role="header">
+				<h1>Circle</h1>
+			</div><!-- /header -->
+		
+			<div role="main" class="ui-content">
+				<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+			</div><!-- /content -->
+		
+			<div data-role="footer" data-id="footera" data-position="fixed">
+		        <div data-role="navbar">
+		            <ul>
+		                <li>
+		                	<a href="#star" >
+			                	<img width="20px" height="20px" src="img/star.svg"><br/>
+			                	<span>Star</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#square">
+			                	<img width="20px" height="20px" src="img/square.svg"><br/>
+			                	<span>Square</span>
+			                </a>
+			            </li>
+			            <li>
+		                	<a href="#circle" class="ui-btn-active">
+			                	<img width="20px" height="20px" src="img/circle.svg"><br/>
+			                	<span>Circle</span>
+			                </a>
+			            </li>
+		                
+		            </ul>
+		        </div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div><!-- /page -->
+     
+    	
+		
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/libs/jquery-2.1.3/jquery.min.2.1.3.js"></script>        
         <script type="text/javascript" src="js/libs/jquery.mobile-1.4.5/jquery.mobile.custom.min.js"></script>
