@@ -45,5 +45,28 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-    }
+    }    
 };
+
+
+/*
+$('[data-role=page]').on('pageshow', function (event, ui) {
+	
+	console.log($("#" + event.target.id).find("[data-role=footer]"));
+	
+        $("#" + event.target.id).find("[data-role=footer]").load("footer.html", function(){
+            $("#" + event.target.id).find("[data-role=navbar]").navbar();
+        });
+});
+
+
+
+
+$('[data-role=page]').each(function () {
+	
+	
+	
+        $(this).find("[data-role=footer]").load("footer.html", function(){
+            $(this).find("[data-role=navbar]").navbar();
+        });
+});*/
